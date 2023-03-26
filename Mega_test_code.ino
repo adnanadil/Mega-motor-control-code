@@ -139,7 +139,7 @@ void motorControlBasedOnSerial(){
       if (data == 50)
       {
       // run motor in forward direction
-      motor_op('f',100, 'f', 100);            
+      motor_op('f',150, 'f', 150);            
 //      Serial.println("forward");
       Serial.println("reverse");
       moveDir = 2;
@@ -147,7 +147,7 @@ void motorControlBasedOnSerial(){
       else   if (data == 10)
       {
         // run motor in reverse direction
-        motor_op('b',100, 'b', 100);
+        motor_op('b',150, 'b', 150);
 //        Serial.println("reverse");
         Serial.println("front");
         moveDir = 1;
@@ -155,14 +155,14 @@ void motorControlBasedOnSerial(){
       else   if (data == 70)
       {
         // run motor in left direction
-        motor_op('b',180, 'f', 180);
+        motor_op('b',250, 'f', 250);
         Serial.println("left");
         moveDir = 1;
       } 
       else   if (data == 90)
       {
         // run motor in right direction
-        motor_op('f',180, 'b', 180);
+        motor_op('f',250, 'b', 250);
         Serial.println("right");
         moveDir = 1;
       } 
